@@ -1,0 +1,14 @@
+# Do not ship the dataset (per the brief) nor local build artefacts.
+dataset/
+output/
+*.duckdb
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+
+# Not part of the submission: the assignment PDF and editor config.
+Harbour Watch/
+*.pdf
+.vscode/

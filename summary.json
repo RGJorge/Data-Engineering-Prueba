@@ -1,0 +1,149 @@
+{
+  "tracks": {
+    "n_rows_read": 24031,
+    "n_rows_duplicate": 2025,
+    "n_rows_rejected": 210,
+    "n_points_valid": 21796,
+    "n_points_missing_altitude": 579,
+    "n_tracks": 216,
+    "tracks_per_class": {
+      "bird": 16,
+      "boat": 103,
+      "drone": 6,
+      "person": 29,
+      "vehicle": 62
+    },
+    "max_altitude_msl_m": 152.4,
+    "per_station": {
+      "S1": {
+        "n_tracks": 72,
+        "n_points_valid": 7408,
+        "first_point_utc": "2025-01-14T02:02:27.635Z",
+        "last_point_utc": "2025-12-31T22:09:21.789Z"
+      },
+      "S2": {
+        "n_tracks": 72,
+        "n_points_valid": 7310,
+        "first_point_utc": "2025-01-14T00:10:37.349Z",
+        "last_point_utc": "2025-12-31T23:58:16.374Z"
+      },
+      "S3": {
+        "n_tracks": 72,
+        "n_points_valid": 7078,
+        "first_point_utc": "2025-01-14T02:48:38.110Z",
+        "last_point_utc": "2025-12-31T16:18:06.615Z"
+      }
+    },
+    "sample_tracks": [
+      {
+        "station_id": "S1",
+        "track_id": "0014003",
+        "n_points_valid": 153,
+        "first_point_utc": "2025-01-14T23:01:45.331Z",
+        "last_point_utc": "2025-01-14T23:04:19.140Z"
+      },
+      {
+        "station_id": "S1",
+        "track_id": "322E003",
+        "n_points_valid": 151,
+        "first_point_utc": "2025-11-18T07:28:13.832Z",
+        "last_point_utc": "2025-11-18T07:30:44.315Z"
+      },
+      {
+        "station_id": "S1",
+        "track_id": "S1/121003",
+        "n_points_valid": 171,
+        "first_point_utc": "2025-05-01T05:42:12.006Z",
+        "last_point_utc": "2025-05-01T05:45:04.759Z"
+      },
+      {
+        "station_id": "S1",
+        "track_id": "S1/189003",
+        "n_points_valid": 79,
+        "first_point_utc": "2025-07-08T04:37:47.015Z",
+        "last_point_utc": "2025-07-08T04:39:06.950Z"
+      },
+      {
+        "station_id": "S2",
+        "track_id": "0089003",
+        "n_points_valid": 65,
+        "first_point_utc": "2025-03-30T02:04:45.572Z",
+        "last_point_utc": "2025-03-30T02:05:50.803Z"
+      },
+      {
+        "station_id": "S2",
+        "track_id": "244E003",
+        "n_points_valid": 61,
+        "first_point_utc": "2025-09-01T04:01:37.186Z",
+        "last_point_utc": "2025-09-01T04:02:36.958Z"
+      },
+      {
+        "station_id": "S3",
+        "track_id": "0014003",
+        "n_points_valid": 62,
+        "first_point_utc": "2025-01-14T05:36:37.304Z",
+        "last_point_utc": "2025-01-14T05:37:40.117Z"
+      },
+      {
+        "station_id": "S3",
+        "track_id": "0051003",
+        "n_points_valid": 72,
+        "first_point_utc": "2025-02-20T01:13:03.217Z",
+        "last_point_utc": "2025-02-20T01:14:16.499Z"
+      },
+      {
+        "station_id": "S3",
+        "track_id": "0120003",
+        "n_points_valid": 132,
+        "first_point_utc": "2025-04-30T02:54:16.221Z",
+        "last_point_utc": "2025-04-30T02:56:27.954Z"
+      },
+      {
+        "station_id": "S3",
+        "track_id": "299E003",
+        "n_points_valid": 136,
+        "first_point_utc": "2025-10-26T19:04:41.318Z",
+        "last_point_utc": "2025-10-26T19:06:58.146Z"
+      },
+      {
+        "station_id": "S3",
+        "track_id": "322E003",
+        "n_points_valid": 119,
+        "first_point_utc": "2025-11-18T21:33:04.829Z",
+        "last_point_utc": "2025-11-18T21:35:05.931Z"
+      },
+      {
+        "station_id": "S3",
+        "track_id": "365E003",
+        "n_points_valid": 175,
+        "first_point_utc": "2025-12-31T14:01:12.971Z",
+        "last_point_utc": "2025-12-31T14:04:10.257Z"
+      }
+    ]
+  },
+  "images": {
+    "n_image_files": 901,
+    "n_images_valid": 888,
+    "n_images_corrupted": 13,
+    "n_images_without_metadata": 6,
+    "n_metadata_records": 894,
+    "n_metadata_lines_malformed": 3,
+    "n_metadata_records_missing_image": 0,
+    "n_faces": 213,
+    "n_detections_valid": 1544,
+    "n_detections_rejected": 13,
+    "detections_per_class": {
+      "bird": 184,
+      "boat": 661,
+      "drone": 60,
+      "person": 266,
+      "vehicle": 373
+    }
+  },
+  "clips": {
+    "n_clips": 108,
+    "total_duration_s": 3407.0,
+    "n_labels_valid": 1169,
+    "n_labels_rejected": 25
+  }
+}

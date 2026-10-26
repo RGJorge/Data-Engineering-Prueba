@@ -1,0 +1,24 @@
+# Run with:
+#   DATA_DIR=/path/to/dataset OUTPUT_DIR=/path/to/output \
+#       docker compose up --exit-code-from evaluate
+#
+# Two services, no database server to wait for (DuckDB is an embedded file):
+#   pipeline  reads /data, builds the warehouse, validates+copies images, logs rejects
+#   evaluate  runs only after pipeline succeeds, queries the warehouse, writes summary.json
+services:
+  pipeline:
+    build: .
+    command: python -m src.run_pipeline
+    volumes:
+      - ${DATA_DIR:-./dataset}:/data:ro
+      - ${OUTPUT_DIR:-./output}:/output
+
+  evaluate:
+    build: .
+    command: python -m src.evaluate
+    volumes:
+      - ${DATA_DIR:-./dataset}:/data:ro
+      - ${OUTPUT_DIR:-./output}:/output
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully
